@@ -15,22 +15,30 @@
   <body>
   <!---    Page Content ----->
   
-		<div class="container">
+		
 				
 		
-			<!---- Top Card  ----->
+			<!---- NAV  ----->
 				
-				<div class="card bg-dark text-white">
-				<img class="card-img" src="./img/spring.jpg" alt="Card image">
-					<div class="card-img-overlay">
-						<h5 class="card-title">Miguel Colayco</h5>					
-						<a href="#skills" class="card-link text-white">Skills</a>
-						<a href="#projects" class="card-link text-white">Projects</a>
-						<a href="#experience" class="card-link text-white">Experience</a>
-						<a href="#contact" class="card-link text-white">Contact</a>
-					</div>
+			<div class="wrap">
+				<div class="menu-container">	
+					<ul class="menu">	
+						<a href="#home"><li>HOME</li></a>
+						<a href="#skills"><li>Skills</li></a>
+						<a href="#projects"><li>Projects</li></a>
+						<a href="#experience"><li>Experience</li></a>
+						<a href="#contact"><li>Contact</li></a>
+					</ul>
 				</div>
-			<!-----/Top Card ----->
+			</div>
+			<!-----/NAV ----->
+			<!--HOME -->
+		<div id="home">
+			<div class="container">
+				
+			</div>
+		</div>
+		<!--END HOME -->
 			
 			<!-----	Main Content ----->
 			
@@ -60,7 +68,7 @@
 						</div>
 				</div>
 			</div>
-		</div>
+		
 
 				
 		<div class="container text-center" id="projects">	
@@ -89,7 +97,8 @@
 		
 		<div class="container text-center" id="contact">
 			<h1>CONTACT ME </h1>
-			<a href="https://www.linkedin.com/in/miguel-colayco-12678b64">Visit my Linkedin page</a>
+			<button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Check this out!" href="https://www.linkedin.com/in/miguel-colayco-12678b64">Visit my Linkedin page;
+			</button>
 		
 		</div>
 			<!------/Main Content ----->
@@ -101,5 +110,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+	
+	<script>
+		$('.popover-dismiss').popover({
+		trigger: 'hover'
+		})
+	</script>
+ 
+ </body>
 </html>
